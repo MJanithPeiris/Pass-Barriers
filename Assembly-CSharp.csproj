@@ -48,6 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <None Include="Assets\StreamingAssets\Vuforia\Pass_Barriers_Target_Image.xml" />
  <Reference Include="UnityEngine">
