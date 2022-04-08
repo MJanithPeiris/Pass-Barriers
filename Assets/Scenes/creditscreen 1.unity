@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: Quit
 --- !u!222 &24591634
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -301,11 +301,11 @@ RectTransform:
   m_Children:
   - {fileID: 24591631}
   m_Father: {fileID: 708858139}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12, y: -116}
+  m_AnchoredPosition: {x: 269.67, y: -239.77}
   m_SizeDelta: {x: 260.66, y: 88.2037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302363728
@@ -368,8 +368,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 708858142}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: StartGame
+        m_TargetAssemblyTypeName: Credits, Assembly-CSharp
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 708858140}
   - component: {fileID: 708858142}
   m_Layer: 5
-  m_Name: Welcome
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -449,6 +449,7 @@ RectTransform:
   m_Children:
   - {fileID: 1448587093}
   - {fileID: 1353629643}
+  - {fileID: 1922759073}
   - {fileID: 302363727}
   m_Father: {fileID: 716127823}
   m_RootOrder: 0
@@ -505,7 +506,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 708858138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a64fe1a0e71ac47479f874501a6cc9c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 490ff8da090090c48aadf6b7b7c14968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &716127819
@@ -620,7 +621,7 @@ GameObject:
   - component: {fileID: 1353629645}
   - component: {fileID: 1353629644}
   m_Layer: 5
-  m_Name: Pass
+  m_Name: 'Made By:'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -642,7 +643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000017104, y: 56}
+  m_AnchoredPosition: {x: 0.000017104, y: 113}
   m_SizeDelta: {x: 957.3989, y: 166.3674}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353629644
@@ -658,7 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.075614065, g: 0.39068446, b: 0.5566038, a: 1}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -667,18 +668,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 120
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 173
+    m_MaxSize: 72
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pass-Barriers
+  m_Text: 'Made By: '
 --- !u!222 &1353629645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -699,7 +700,7 @@ GameObject:
   - component: {fileID: 1448587095}
   - component: {fileID: 1448587094}
   m_Layer: 5
-  m_Name: WelcomeTo
+  m_Name: Thanks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,7 +758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WELCOME TO
+  m_Text: THANKS FOR PLAYING!!
 --- !u!222 &1448587095
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -765,4 +766,91 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448587092}
+  m_CullTransparentMesh: 1
+--- !u!1 &1922759072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1922759073}
+  - component: {fileID: 1922759075}
+  - component: {fileID: 1922759074}
+  m_Layer: 5
+  m_Name: Names
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1922759073
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922759072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 708858139}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -20, y: -102}
+  m_SizeDelta: {x: 957.4, y: 363.7497}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1922759074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922759072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 72
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Janith
+
+    Jason
+
+    Samadhi
+
+    Yevin
+
+    Yusan'
+--- !u!222 &1922759075
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922759072}
   m_CullTransparentMesh: 1
