@@ -25,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
+        if (rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
+
+
         if (Input.touchCount > 0)
         {
             touch = Input.GetTouch(0);
