@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5617044068984683267}
   m_Layer: 0
   m_Name: Bombcoin
-  m_TagString: Bmb
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +110,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 0}
+  fire: {fileID: 0}

@@ -12,8 +12,15 @@ public class PlayerCollision : MonoBehaviour
             //fire.Enable();
             fire.Play();
             movement.enabled = false;
-          //  FindObjectOfType<GameManager>().EndGame();
+            FindObjectOfType<GameManager>().EndGame();
 
+        }
+        if (collisionInfo.collider.tag == "Bomb")
+        {
+            fire.Play();
+            movement.enabled = false;
+            FindObjectOfType<GameManager>().EndGame();
+            Destroy(gameObject);
         }
     }
 }
