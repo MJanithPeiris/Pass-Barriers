@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Welcome.cs" />
      <Compile Include="Assets\Coins.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
+     <Compile Include="Assets\Bombs.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <None Include="Assets\StreamingAssets\Vuforia\Pass_Barriers_Target_Image.xml" />

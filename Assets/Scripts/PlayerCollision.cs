@@ -10,7 +10,7 @@ public class PlayerCollision : MonoBehaviour
         if (collisionInfo.collider.tag == "Obstacle")
         {
             //fire.Enable();
-          //  fire.Play();
+            fire.Play();
             movement.enabled = false;
           //  FindObjectOfType<GameManager>().EndGame();
 
