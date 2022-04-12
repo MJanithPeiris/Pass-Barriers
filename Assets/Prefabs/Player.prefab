@@ -144,4 +144,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 640127829289336951}
-  fire: {fileID: 0}
+  fire: {fileID: 6581533933485000172, guid: cb33c7be88496624487761c3f40458b0, type: 3}

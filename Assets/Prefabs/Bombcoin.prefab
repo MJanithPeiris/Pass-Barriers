@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8108383407243889309}
   - component: {fileID: 8108383407243889314}
   - component: {fileID: 5617044068984683267}
+  - component: {fileID: 3448734785986867299}
   m_Layer: 0
   m_Name: Bombcoin
   m_TagString: Bomb
@@ -109,5 +110,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d074a2b0a4f704985470793842a654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 0}
+  movement: {fileID: 640127829289336951, guid: ea0d314ce8479b94f9d739b2348189f1, type: 3}
   fire: {fileID: 0}
+--- !u!114 &3448734785986867299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108383407243889312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f218ba97b47ccd64a882897428549c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myColour: {r: 1, g: 1, b: 0, a: 0.5}
+  rfloat: 1
+  gfloat: 1
+  bfloat: 0
+  afloat: 0.5
+  myrendere: {fileID: 8108383407243889309}
+  flag: 0
