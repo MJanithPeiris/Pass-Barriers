@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Credits.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
+     <Compile Include="Assets\LevelComplete.cs" />
      <None Include="Assets\StreamingAssets\Vuforia\Pass_Barriers_Target_Image.xml" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity 2020.3.31f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
