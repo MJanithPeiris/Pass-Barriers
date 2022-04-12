@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
+
     [SerializeField] ParticleSystem fire = null;
     void OnCollisionEnter(Collision collisionInfo)
     {
