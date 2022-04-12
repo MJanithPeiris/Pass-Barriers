@@ -15,12 +15,12 @@ D:/Yevin/Degree/Y2/Agile Professional/2nd Sem/Agile Group Project/Pass-Barriers
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50704
+52609
 Successfully changed project path to: D:/Yevin/Degree/Y2/Agile Professional/2nd Sem/Agile Group Project/Pass-Barriers
 D:/Yevin/Degree/Y2/Agile Professional/2nd Sem/Agile Group Project/Pass-Barriers
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.63 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 1.03 ms.
+Refreshing native plugins compatible for Editor in 44.77 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 1.56 ms.
 Initialize engine version: 2020.3.31f1 (6b54b7616050)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2020.3.31f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Yevin/Degree/Y2/Agile Professional/2nd Sem/Agile Group Project/Pass-Barriers/Assets
@@ -36,49 +36,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2020.3.31f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2020.3.31f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2020.3.31f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56436
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2020.3.31f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001890 seconds.
+Registered in 0.001923 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 29.85 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
+Refreshing native plugins compatible for Editor in 33.94 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.590 seconds
+- Completed reload, in  0.607 seconds
 Domain Reload Profiling:
-	ReloadAssembly (590ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (608ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (454ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (453ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (166ms)
+			SetupTypeCache (164ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (152ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (163ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (30ms)
-				BeforeProcessingInitializeOnLoad (12ms)
-				ProcessInitializeOnLoadAttributes (80ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				RefreshPlugins (34ms)
+				BeforeProcessingInitializeOnLoad (16ms)
+				ProcessInitializeOnLoadAttributes (84ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004836 seconds.
+Registered in 0.004617 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
 System.NullReferenceException: Object reference not set to an instance of an object
   at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <664162e2bf7f40388b13ee61d1693ae2>:0 
   at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <664162e2bf7f40388b13ee61d1693ae2>:0 
@@ -106,30 +106,30 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.064 seconds
+- Completed reload, in  1.034 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1064ms)
-		BeginReloadAssembly (168ms)
+	ReloadAssembly (1035ms)
+		BeginReloadAssembly (143ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (816ms)
-			LoadAssemblies (90ms)
+		EndReloadAssembly (828ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (296ms)
+			SetupTypeCache (291ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (294ms)
+			SetupLoadedEditorAssemblies (298ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (192ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
@@ -137,15 +137,15 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'PointClouds/PointSplat': fallback shader 'PointClouds/PointSplatLegacy' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.04 ms.
-Unloading 1560 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1561 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 74.7 MB.
 System memory in use after: 74.8 MB.
 
-Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2253.
-Total: 4.473100 ms (FindLiveObjects: 0.155500 ms CreateObjectMapping: 0.064100 ms MarkObjects: 4.118000 ms  DeleteObjects: 0.134200 ms)
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2254.
+Total: 2.482600 ms (FindLiveObjects: 0.135500 ms CreateObjectMapping: 0.052700 ms MarkObjects: 2.229700 ms  DeleteObjects: 0.064000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -160,13 +160,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Material/GroundMaterial.mat
-  artifactKey: Guid(68f1dae8ed243a044be376b6a32e0b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/GroundMaterial.mat using Guid(68f1dae8ed243a044be376b6a32e0b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b123f791d89e1c7e62c363cb9a3ad700') in 0.140873 seconds 
+  path: Assets/Animation
+  artifactKey: Guid(70446121fbdf0ab4b8f397e7e4c5f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation using Guid(70446121fbdf0ab4b8f397e7e4c5f3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77d94b1d7ab2b3c7761f54cdc143924') in 0.007577 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Material/ObstacleMaterial.mat
-  artifactKey: Guid(21a21e031a64f12489455c6ff23dc0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Material/ObstacleMaterial.mat using Guid(21a21e031a64f12489455c6ff23dc0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625a36efefa4102f4f96986eadb28ca7') in 0.021186 seconds 
+  Time since last request: 5.077096 seconds.
+  path: Assets/Animation/LevelComplete.anim
+  artifactKey: Guid(29dc8adec0ec5934d98a683ef8f261ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/LevelComplete.anim using Guid(29dc8adec0ec5934d98a683ef8f261ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e241d8aafcbc7888cdea26298bfc102') in 0.050200 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
