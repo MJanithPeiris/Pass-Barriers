@@ -38,18 +38,21 @@ public class GameManager : MonoBehaviour
 
         numberOfCoinsCollect = 0; // reset the coin count
 
-        // set the coin 
+        // set the default colours to coin 
         rFloat = 0;
         gFloat = 0.46374f;
         bFloat = 0.04323f;
         aFloat = 1f;
+        // reset the colour when the level starts again
         myColour = new Color(rFloat, gFloat, bFloat, aFloat);
         coin.sharedMaterial.color = myColour;
 
+        // set the default colours to bomb coin
         rFloat = 0.5501f;
         gFloat = 0;
         bFloat = 0;
         aFloat = 1f;
+        // reset the colour when the level starts again
         myColour = new Color(rFloat, gFloat, bFloat, aFloat);
         bomb.sharedMaterial.color = myColour;
     }

@@ -10,13 +10,13 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collisionInfo.collider.tag == "Obstacle") // check player hits with a obstacle 
         {
-            fire.Play(); // animation of particle
+            fire.Play(); // start animation of particle
             movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame(); // end the game
         }
         if (collisionInfo.collider.tag == "Bomb") // check player hits with bomb
         {
-            fire.Play(); // animation of particle
+            fire.Play(); // start animation of particle
             movement.enabled = false; // to stop the player movement
             FindObjectOfType<GameManager>().EndGame(); // end gane
             Destroy(gameObject); // remove the bomb coin

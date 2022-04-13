@@ -8,6 +8,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = GameManager.numberofcoins.ToString("0"); // set the score text to number of coins that player collects
+        scoreText.text = GameManager.numberOfCoinsCollect.ToString("0"); // set the score text to number of coins that player collects
     }
 }

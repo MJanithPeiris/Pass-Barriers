@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb; // reference for player's rigidbody
     public float forwardForce = 2000f;
-    public float sidewayForce = 1000f;
+    public float sidewayForce = 50f;
     private Touch touch; // to get touch control
     public bool touchonLeft = false;
     public bool touchonRight = false;
@@ -36,25 +36,26 @@ public class PlayerMovement : MonoBehaviour
 
             if (touchonLeft)
             {
-                rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+                rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange); // add force to left if left side of the screen is touched
             }
             if (touchonRight)
             {
-                rb.AddForce(sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+                rb.AddForce(sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange); // add force to right if right side of the screen is touched
             }
 
+            // check whether the display is touched or not
             switch (touch.phase)
             {
-                case TouchPhase.Began:
-                    if (touch.position.x < Screen.width / 2)
-                        touchonLeft = true;
+                case TouchPhase.Began: // if display is touched 
+                    if (touch.position.x < Screen.width / 2) // check which side of the screen is touched
+                        touchonLeft = true; // if it is left
 
                     if (touch.position.x > Screen.width / 2)
-                        touchonRight = true;
+                        touchonRight = true; // if it is right
 
                     break;
 
-                case TouchPhase.Ended:
+                case TouchPhase.Ended: // if display is not touched 
                     touchonRight = false;
                     touchonLeft = false;
                     break;

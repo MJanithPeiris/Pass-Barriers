@@ -6,31 +6,29 @@ using UnityEngine;
 public class ChangeGuideText : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] Text guideText;
-    public bool flag = true;
+    [SerializeField] Text guideText; // reference to giud text
+    public bool isButtonClicked = true;
 
     public void disableGuideText()
     {
-        guideText.gameObject.SetActive(false);
+        guideText.gameObject.SetActive(false); // disable the visibility of guide text lable
     }
 
     public void changeText()
     {
-        guideText.gameObject.SetActive(true);
+        guideText.gameObject.SetActive(true); // enable the visibility of guide text lable
 
-        if (flag)
+        // display the message according to the colour blind mode
+        if (isButtonClicked)
         {
             guideText.text = "Collect the Yellow coins and dodge the Blue coins hidden throughtout the level";
-
-            flag = false;
+            isButtonClicked = false;
         }
         else
         {
             guideText.text = "Collect the Green coins and dodge the Red coins hidden throughtout the level";
-            flag = true;
+            isButtonClicked = true;
         }
-//
-        Invoke("disableGuideText", 3f);
+        Invoke("disableGuideText", 3f); // make a 3 second delay before disable the visibility of guide text lable
     }
-
 }

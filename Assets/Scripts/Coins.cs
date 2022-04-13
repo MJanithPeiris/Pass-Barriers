@@ -3,19 +3,19 @@ using UnityEngine;
 public class Coins : MonoBehaviour
 {
 
-    [SerializeField] private Vector3 _rotate;
-    [SerializeField] private float _speed;
+    [SerializeField] private Vector3 rotate;
+    [SerializeField] private float speed;
 
 
     void Update()
     {
-        transform.Rotate(_rotate * _speed * Time.deltaTime);
+        transform.Rotate(rotate * speed * Time.deltaTime); // rotate the coin
     }
 
     void OnTriggerEnter()
     {
-        GameManager.numberOfCoinsCollect += 1;
-        Destroy(gameObject);
+        GameManager.numberOfCoinsCollect += 1; // when player colloect a coin add it to the score
+        Destroy(gameObject); // remove that coin from the scene
 
     }
 }

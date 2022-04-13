@@ -2,24 +2,22 @@ using UnityEngine;
 
 public class Bombs : MonoBehaviour
 {
-    public PlayerMovement movement;
-    [SerializeField] ParticleSystem fire = null;
+    public PlayerMovement movement; // refetence to player
+    [SerializeField] ParticleSystem fire = null; // reference to particles
     
-    [SerializeField] private Vector3 _rotate;
-    [SerializeField] private float _speed;
+    [SerializeField] private Vector3 rotate;
+    [SerializeField] private float speed;
 
     void Update()
     {
-        transform.Rotate(_rotate *_speed * Time.deltaTime);
+        transform.Rotate(rotate * speed * Time.deltaTime); // rotate the bomb coin
     }
 
     void OnTriggerEnter()
     {
-        fire.Play();
-        movement.enabled = false;
-        //        GameManager.numberOfCoinsCollect += 1;
-        Destroy(gameObject);
-        FindObjectOfType<GameManager>().EndGame();
-
+        fire.Play(); // start animation of particle
+        movement.enabled = false; // stop player movement
+        Destroy(gameObject); // distroy the coin
+        FindObjectOfType<GameManager>().EndGame(); // stop the game level
     }
 }
