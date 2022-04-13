@@ -3,7 +3,6 @@ using UnityEngine;
 public class Coins : MonoBehaviour
 {
 
-    public Transform transform;
     [SerializeField] private Vector3 _rotate;
     [SerializeField] private float _speed;
 

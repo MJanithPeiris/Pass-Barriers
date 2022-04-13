@@ -4,7 +4,7 @@ public class Bombs : MonoBehaviour
 {
     public PlayerMovement movement;
     [SerializeField] ParticleSystem fire = null;
-    public Transform transform;
+    
     [SerializeField] private Vector3 _rotate;
     [SerializeField] private float _speed;
 

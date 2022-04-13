@@ -55,11 +55,13 @@
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\Welcome.cs" />
      <Compile Include="Assets\Scripts\Coins.cs" />
+     <Compile Include="Assets\ChangeGuideText.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
      <Compile Include="Assets\Scripts\Bombs.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ChangeColourBomb.cs" />
+     <Compile Include="Assets\Countdown.cs" />
      <None Include="Assets\StreamingAssets\Vuforia\Pass_Barriers_Target_Image.xml" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.31f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
