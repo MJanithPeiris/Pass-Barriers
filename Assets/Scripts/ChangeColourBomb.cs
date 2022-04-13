@@ -17,7 +17,7 @@ public class ChangeColourBomb : MonoBehaviour
         rfloat = 0.5501f;
         gfloat = 0;
         bfloat = 0;
-        afloat = 1;
+        afloat = 1f;
         myrendere = gameObject.GetComponent<Renderer>();
     }
 
@@ -38,7 +38,7 @@ public class ChangeColourBomb : MonoBehaviour
             rfloat = 0.5501f;
             gfloat = 0;
             bfloat = 0;
-            afloat = 1;
+            afloat = 1f;
             flag = true;
         }
         myColour = new Color(rfloat, gfloat, bfloat, afloat);

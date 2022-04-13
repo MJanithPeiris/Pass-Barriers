@@ -110,7 +110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeb7d00f6b6d0c439dd380d49d0eaf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 4428582619444321853}
   _rotate: {x: 10, y: 0, z: 0}
   _speed: 45
 --- !u!114 &3207876430998583891
@@ -125,10 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99cfb64a3be36394a991f2618bc6aaac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myColour: {r: 0, g: 0, b: 0, a: 0}
-  rfloat: 0
-  gfloat: 0
-  bfloat: 0
-  afloat: 0
+  myColour: {r: 0, g: 0.4627451, b: 0.043137256, a: 0.88235295}
+  rfloat: 0.83316
+  gfloat: 0.67596
+  bfloat: 0.05109
+  afloat: 0.5
   myrendere: {fileID: 4428582619444321855}
-  flag: 1
+  flag: 0
