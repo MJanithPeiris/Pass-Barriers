@@ -3,13 +3,11 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public Transform player;
-public Text scoreText;
+    public Text scoreText; // reference for score text
 
-// Update is called once per frame
-void Update()
-{
-//scoreText.text = player.position.z.ToString("0");
-scoreText.text = GameManager.numberofcoins.ToString("0");
-}
+    // Update is called once per frame
+    void Update()
+    {
+        scoreText.text = GameManager.numberofcoins.ToString("0"); // set the score text to number of coins that player collects
+    }
 }

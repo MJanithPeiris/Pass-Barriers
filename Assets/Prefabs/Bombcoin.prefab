@@ -110,9 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d074a2b0a4f704985470793842a654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 640127829289336951, guid: ea0d314ce8479b94f9d739b2348189f1, type: 3}
+  movement: {fileID: 4779206587043613848, guid: ea0d314ce8479b94f9d739b2348189f1, type: 3}
   fire: {fileID: 6581533933485000172, guid: cb33c7be88496624487761c3f40458b0, type: 3}
-  transform: {fileID: 8108383407243889311}
   _rotate: {x: 10, y: 0, z: 0}
   _speed: 45
 --- !u!114 &3448734785986867299
@@ -127,10 +126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f218ba97b47ccd64a882897428549c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myColour: {r: 1, g: 1, b: 0, a: 0.5}
-  rfloat: 1
-  gfloat: 1
+  myColour: {r: 0.5501, g: 0, b: 0, a: 1}
+  rfloat: 0.5501
+  gfloat: 0
   bfloat: 0
-  afloat: 0.5
+  afloat: 1
   myrendere: {fileID: 8108383407243889309}
-  flag: 0
+  flag: 1

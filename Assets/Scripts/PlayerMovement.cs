@@ -2,67 +2,61 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Rigidbody rb;
-
-    public float forwardForce = 2200f;
+    public Rigidbody rb; // reference for player's rigidbody
+    public float forwardForce = 2000f;
     public float sidewayForce = 1000f;
-    private Touch touch;
-    public bool touchonl = false;
-    public bool touchonr = false;
+    private Touch touch; // to get touch control
+    public bool touchonLeft = false;
+    public bool touchonRight = false;
 
     // Update is called once per frame
     void Update()
     {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
-
-        if (Input.GetKey("d"))
+        // player movement with keyboard control
+        if (Input.GetKey("d")) // to move right
         {
             rb.AddForce(sidewayForce * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a")) // to move left
         {
             rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0);
         }
 
-
+        // if player goes out of bound then end the game
         if (rb.position.y < -1f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
 
-
+        // player movement with touch control
         if (Input.touchCount > 0)
         {
             touch = Input.GetTouch(0);
 
-            if (touchonl)
+            if (touchonLeft)
             {
                 rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
             }
-            if (touchonr)
+            if (touchonRight)
             {
                 rb.AddForce(sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
             }
-
 
             switch (touch.phase)
             {
                 case TouchPhase.Began:
                     if (touch.position.x < Screen.width / 2)
-                        // rb.velocity = new Vector3(-movespeed, 0f, 0f);
-                        //rb.AddForce(-sidewayforce * Time.deltaTime , 0, 0, ForceMode.VelocityChange);
-                        touchonl = true;
+                        touchonLeft = true;
 
                     if (touch.position.x > Screen.width / 2)
-                        //rb.velocity = new Vector3(movespeed, 0f, 0f);
-                        // rb.AddForce(sidewayforce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-                        touchonr = true;
+                        touchonRight = true;
 
                     break;
+
                 case TouchPhase.Ended:
-                    //rb.velocity = new Vector3(0f, 0f, 0f);
-                    touchonr = false;
-                    touchonl = false;
+                    touchonRight = false;
+                    touchonLeft = false;
                     break;
             }
         }

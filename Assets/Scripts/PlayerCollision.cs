@@ -2,25 +2,24 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    public PlayerMovement movement;
+    public PlayerMovement movement; // to get reference to player
 
-    [SerializeField] ParticleSystem fire = null;
+    [SerializeField] ParticleSystem fire = null; // reference to particles
+
     void OnCollisionEnter(Collision collisionInfo)
     {
-        if (collisionInfo.collider.tag == "Obstacle")
+        if (collisionInfo.collider.tag == "Obstacle") // check player hits with a obstacle 
         {
-            //fire.Enable();
-            fire.Play();
+            fire.Play(); // animation of particle
             movement.enabled = false;
-            FindObjectOfType<GameManager>().EndGame();
-
+            FindObjectOfType<GameManager>().EndGame(); // end the game
         }
-        if (collisionInfo.collider.tag == "Bomb")
+        if (collisionInfo.collider.tag == "Bomb") // check player hits with bomb
         {
-            fire.Play();
-            movement.enabled = false;
-            FindObjectOfType<GameManager>().EndGame();
-            Destroy(gameObject);
+            fire.Play(); // animation of particle
+            movement.enabled = false; // to stop the player movement
+            FindObjectOfType<GameManager>().EndGame(); // end gane
+            Destroy(gameObject); // remove the bomb coin
         }
     }
 }

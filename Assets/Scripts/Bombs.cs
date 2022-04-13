@@ -17,7 +17,7 @@ public class Bombs : MonoBehaviour
     {
         fire.Play();
         movement.enabled = false;
-        //        GameManager.numberofcoins += 1;
+        //        GameManager.numberOfCoinsCollect += 1;
         Destroy(gameObject);
         FindObjectOfType<GameManager>().EndGame();
 

@@ -5,49 +5,52 @@ public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
     public float restartDelay = 1f;
-    public GameObject completeLevelUI;
-    public static int numberofcoins = 0;
-    public Renderer coin;
-    public Renderer bomb;
-    public float rfloat = 0;
-    public float gfloat = 0;
-    public float bfloat = 0;
-    public float afloat = 0;
+    public GameObject completeLevelUI; // reference to level complete 
+    public static int numberOfCoinsCollect = 0;
+
+    public Renderer coin; // reference to coin
+    public Renderer bomb; // reference to bomb coin
+    // store colours for coins and bomb coins
+    public float rFloat = 0;
+    public float gFloat = 0;
+    public float bFloat = 0;
+    public float aFloat = 0;
     public Color myColour;
 
 
     public void CompleteLevel()
     {
-        completeLevelUI.SetActive(true);
+        completeLevelUI.SetActive(true); // show the level complete message
     }
 
-    public void EndGame()
+    public void EndGame() // end the game and restart the level again
     {
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-            Invoke("Restart", restartDelay);
+            Invoke("Restart", restartDelay); // restart the level with a delay
         }
-        
-    }
-    void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        numberofcoins = 0;
-        rfloat = 0;
-        gfloat = 0.46374f;
-        bfloat = 0.04323f;
-        afloat = 1;
-        //coin = gameObject.GetComponent<Renderer>();
-        myColour = new Color(rfloat, gfloat, bfloat, afloat);
-        coin.sharedMaterial.color = myColour;
-        rfloat = 0.5501f;
-        gfloat = 0;
-        bfloat = 0;
-        afloat = 1f;
-        //bomb = gameObject.GetComponent<Renderer>();
-        myColour = new Color(rfloat, gfloat, bfloat, afloat);
-        bomb.sharedMaterial.color = myColour;
     }
 
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // to get the same level
+
+        numberOfCoinsCollect = 0; // reset the coin count
+
+        // set the coin 
+        rFloat = 0;
+        gFloat = 0.46374f;
+        bFloat = 0.04323f;
+        aFloat = 1f;
+        myColour = new Color(rFloat, gFloat, bFloat, aFloat);
+        coin.sharedMaterial.color = myColour;
+
+        rFloat = 0.5501f;
+        gFloat = 0;
+        bFloat = 0;
+        aFloat = 1f;
+        myColour = new Color(rFloat, gFloat, bFloat, aFloat);
+        bomb.sharedMaterial.color = myColour;
+    }
 }

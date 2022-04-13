@@ -14,7 +14,7 @@ public class Coins : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        GameManager.numberofcoins += 1;
+        GameManager.numberOfCoinsCollect += 1;
         Destroy(gameObject);
 
     }

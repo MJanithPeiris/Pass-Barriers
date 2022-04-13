@@ -5,10 +5,10 @@ using UnityEngine;
 public class ChangeColourCoin : MonoBehaviour
 {
     public Color myColour;
-    public float rfloat = 0;
-    public float gfloat = 0;
-    public float bfloat = 0;
-    public float afloat = 0;
+    public float rFloat = 0;
+    public float gFloat = 0;
+    public float bFloat = 0;
+    public float aFloat = 0;
     public Renderer myrendere;
     public bool flag = true;
 
@@ -16,10 +16,10 @@ public class ChangeColourCoin : MonoBehaviour
     void Start()
     {
         
-        rfloat = 0;
-        gfloat = 0.46374f;
-        bfloat = 0.04323f;
-        afloat = 1;
+        rFloat = 0;
+        gFloat = 0.46374f;
+        bFloat = 0.04323f;
+        aFloat = 1;
         myrendere = gameObject.GetComponent<Renderer>();
     }
 
@@ -30,10 +30,10 @@ public class ChangeColourCoin : MonoBehaviour
     {
         if (flag)
         {
-            rfloat = 0.83316f;
-            gfloat = 0.67596f;
-            bfloat = 0.05109f;
-            afloat = 0.5f;
+            rFloat = 0.83316f;
+            gFloat = 0.67596f;
+            bFloat = 0.05109f;
+            aFloat = 0.5f;
 
             flag = false;
         }
@@ -41,24 +41,14 @@ public class ChangeColourCoin : MonoBehaviour
         {
             
 
-            rfloat = 0;
-            gfloat = 0.46374f;
-            bfloat = 0.04323f;
-            afloat = 1;
+            rFloat = 0;
+            gFloat = 0.46374f;
+            bFloat = 0.04323f;
+            aFloat = 1;
 
             flag = true;
         }
-        myColour = new Color(rfloat, gfloat, bfloat, afloat);
+        myColour = new Color(rFloat, gFloat, bFloat, aFloat);
         myrendere.sharedMaterial.color = myColour;
-    }
-
-    public void resetColour()
-    {
-        rfloat = 0;
-        gfloat = 0.46374f;
-        bfloat = 0.04323f;
-        afloat = 1;
-        flag = true;
-        myrendere = gameObject.GetComponent<Renderer>();
     }
 }
