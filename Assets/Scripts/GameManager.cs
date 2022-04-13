@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        numberofcoins = 0;
     }
 
 }
