@@ -15,10 +15,11 @@ public class ChangeColourCoin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rfloat = 0.83316f;
-        gfloat = 0.67596f;
-        bfloat = 0.05109f;
-        afloat = 0.5f;
+        
+        rfloat = 0;
+        gfloat = 0.46374f;
+        bfloat = 0.04323f;
+        afloat = 1;
         myrendere = gameObject.GetComponent<Renderer>();
     }
 
@@ -29,23 +30,35 @@ public class ChangeColourCoin : MonoBehaviour
     {
         if (flag)
         {
-            rfloat = 0;
-            gfloat = 0.46374f;
-            bfloat = 0.04323f;
-            afloat = 1;
+            rfloat = 0.83316f;
+            gfloat = 0.67596f;
+            bfloat = 0.05109f;
+            afloat = 0.5f;
 
             flag = false;
         }
         else
         {
-            rfloat = 0.83316f;
-            gfloat = 0.67596f;
-            bfloat = 0.05109f;
-            afloat = 0.5f;
             
+
+            rfloat = 0;
+            gfloat = 0.46374f;
+            bfloat = 0.04323f;
+            afloat = 1;
+
             flag = true;
         }
         myColour = new Color(rfloat, gfloat, bfloat, afloat);
         myrendere.sharedMaterial.color = myColour;
+    }
+
+    public void resetColour()
+    {
+        rfloat = 0;
+        gfloat = 0.46374f;
+        bfloat = 0.04323f;
+        afloat = 1;
+        flag = true;
+        myrendere = gameObject.GetComponent<Renderer>();
     }
 }

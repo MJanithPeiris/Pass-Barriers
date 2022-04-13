@@ -44,4 +44,14 @@ public class ChangeColourBomb : MonoBehaviour
         myColour = new Color(rfloat, gfloat, bfloat, afloat);
         myrendere.sharedMaterial.color = myColour;
     }
+
+    public void resetColour()
+    {
+        rfloat = 0.5501f;
+        gfloat = 0;
+        bfloat = 0;
+        afloat = 1f;
+        flag = true;
+        myrendere = gameObject.GetComponent<Renderer>();
+    }
 }

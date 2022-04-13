@@ -128,8 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4779206587425459436}
-  forwardForce: 1500
-  sidewayForce: 3000
+  forwardForce: 3000
+  sidewayForce: 5000
   touchonl: 0
   touchonr: 0
 --- !u!114 &4779206587425459427
