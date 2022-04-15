@@ -20,6 +20,24 @@ public class GameManager : MonoBehaviour
 
     public void CompleteLevel()
     {
+        // set the default colours to coin 
+        rFloat = 0;
+        gFloat = 0.46374f;
+        bFloat = 0.04323f;
+        aFloat = 1f;
+        // reset the colour when the level starts again
+        myColour = new Color(rFloat, gFloat, bFloat, aFloat);
+        coin.sharedMaterial.color = myColour;
+
+        // set the default colours to bomb coin
+        rFloat = 0.5501f;
+        gFloat = 0;
+        bFloat = 0;
+        aFloat = 1f;
+        // reset the colour when the level starts again
+        myColour = new Color(rFloat, gFloat, bFloat, aFloat);
+        bomb.sharedMaterial.color = myColour;
+
         completeLevelUI.SetActive(true); // show the level complete message
     }
 
@@ -34,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // to get the same level
+        SceneManager.LoadScene("Level 01"); // to go back to level 01
 
         numberOfCoinsCollect = 0; // reset the coin count
 

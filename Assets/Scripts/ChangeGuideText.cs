@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -7,6 +5,8 @@ public class ChangeGuideText : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] Text guideText; // reference to giud text
+
+    public ChangeColourBomb changeColourBomb;
     public bool isButtonClicked = true;
 
     public void disableGuideText()
